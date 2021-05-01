@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/state.jpg');
+    background-size: cover;
+    background-repeat: repeat-y;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    background: rgba( 255, 255, 255, 0.00);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 0.0px);
+    -webkit-backdrop-filter: blur( 0.0px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    padding: 0.3em;
+    margin: 2rem auto;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.state {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+.Container h2 {
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em 0;
+    border: 1px solid #000;
+}
+
+.Container h2:hover {
+    transform: scale(1.1);
+}
+
+.Container .Province {
+    background-color: white;
+}
+
+.Container .Confirmed {
+    background-color: yellow;
+}
+
+.Container .Recovered {
+    background-color: green;
+}
+
+.Container .Active {
+    background-color: orange;
+}
+
+.Container .Deaths {
+    background-color: red;
+}
