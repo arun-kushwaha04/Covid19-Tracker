@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./CSS/state.css">
     <title>State-Data</title>
 </head>
 
 <body>
-    <h1>State-Wise-Data</h1>
+    <div class="main">
+        <h1>State-Wise-Data</h1>
+        <h2>As on 2021-05-01</h2>
+        <button type="submit" onclick="search()"><i class="fa fa-search fa-2x"></i></button>
+        <input type="text" placeholder="Search.." class="search" onkeyup="search()">
+    </div>
+
     <div class="Container">
         <div class="state">
             <h2 class="Province">State</h2>
@@ -18,10 +25,9 @@
             <h2 class="Recovered">Recovered</h2>
             <h2 class="Active">Active</h2>
             <h2 class="Deaths">Deaths</h2>
-        </div>
-
+        </div><br>
     </div>
-    <script src="./JS/index.js"></script>
+    <script src="./JS/state.js"></script>
 </body>
 
 </html>

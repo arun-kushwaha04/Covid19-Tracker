@@ -14,9 +14,7 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
-    font-size: 3rem;
-    text-align: center;
+.main {
     background: rgba( 255, 255, 255, 0.00);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
     backdrop-filter: blur( 0.0px);
@@ -25,6 +23,59 @@ h1 {
     border: 1px solid rgba( 255, 255, 255, 0.18);
     padding: 0.3em;
     margin: 2rem auto;
+    margin-bottom: 10rem;
+    text-align: center;
+}
+
+h1 {
+    float: left;
+    display: inline;
+    font-size: 3rem;
+    margin: 1rem 2rem;
+}
+
+.main h2 {
+    float: left;
+    font-size: 1.5rem;
+    display: inline;
+    font-weight: 600;
+    margin: 1rem 2rem;
+}
+
+.main button {
+    float: right;
+    border: none;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    padding: 0.5em;
+    background: rgba( 255, 255, 255, 0.00);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 0.0px);
+    -webkit-backdrop-filter: blur( 0.0px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    cursor: pointer;
+}
+
+.main input[type=text] {
+    float: right;
+    padding: 0.75em 2em;
+    border: none;
+    margin-top: 1rem;
+    background: rgba( 255, 255, 255, 0.60);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 0.0px);
+    -webkit-backdrop-filter: blur( 0.0px);
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    border-radius: 2em;
+    outline: none;
+    color: rgb(0, 0, 0);
+}
+
+.main::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 h2 {
@@ -51,7 +102,8 @@ h2 {
     border: 1px solid #000;
 }
 
-.Container h2:hover {
+.Container h2:hover,
+.Container h2:focus-within {
     transform: scale(1.1);
 }
 
