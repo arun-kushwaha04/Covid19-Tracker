@@ -90,6 +90,18 @@ h2 {
     grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
     border-right: 1px solid #000;
     border-left: 1px solid #000;
+    animation: myanimation 1s ease;
+}
+
+@keyframes myanimation {
+    from {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .Container h2 {
